@@ -21,7 +21,19 @@ function divide(x,y)
 return x/y
 }
 
-console.log(add(10,10));
-console.log(subratct(10,10));
-console.log(multiply(10,10));
-console.log(divide(10,10));
+var num1 = parseInt(prompt("Enter your first number"));
+var num2 = parseInt(prompt("Enter your second number"));
+var input = prompt("Would you like to ADD, SUBTRACT, MULTIPLY, or DIVIDE your numbers?");
+
+if (input === "ADD")
+    console.log(add(num1, num2));
+
+else if (input === "SUBTRACT")
+    console.log(subratct(num1, num2));
+
+else if (input === "MULTIPLY")
+    console.log(add(num1, num2));
+
+else if (input === "DIVIDE")
+    console.log(divide(num1, num2));
+
